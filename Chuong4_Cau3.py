@@ -1,6 +1,7 @@
 #Câu 3: Viết Hàm tính BMI
 def BMI(height,weight):
     return weight/(height**2)
+#Phân Loại
 def PhanLoai(bmi):
     if bmi<18.5:
         return "Gầy"
@@ -14,6 +15,7 @@ def PhanLoai(bmi):
         return "Béo Phì Cấp Độ 2"
     else:
         return "Béo Phì Cấp độ 3"
+#Nguy Cơ Bệnh
 def NguyCoBenh(bmi):
  if bmi<18.5:
     return "Thấp"
@@ -27,6 +29,8 @@ def NguyCoBenh(bmi):
     return "Rất cao"
  else:
      return "Nguy Hiểm"
+ 
+ #main
 print("Nhập vào chiều cao:")
 height=float(input())
 print("Nhập vào cân nặng:")
