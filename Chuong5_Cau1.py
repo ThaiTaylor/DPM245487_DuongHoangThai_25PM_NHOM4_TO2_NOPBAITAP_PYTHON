@@ -19,7 +19,7 @@ while True:
         print("Chuỗi không đối xứng.")
 
     # Hỏi tiếp tục
-    tiep_tuc = input("Bạn có muốn kiểm tra chuỗi khác không? (c/k): ").upper()
-    if tiep_tuc != 'c':
+    tiep_tuc = input("Bạn có muốn kiểm tra chuỗi khác không? (C/K): ").upper()
+    if tiep_tuc != 'C':
         print("Cảm ơn bạn đã sử dụng chương trình!")
         break
