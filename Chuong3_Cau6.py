@@ -1,8 +1,8 @@
 ##Câu 6: Nhập một số n có tối đa 2 chữ số. Hãy cho biết cách đọc ra dạng chữ.
 #(vd: n=35 => Ba mươi lăm, n=5 => năm). 
 
-def doc_so(n):
-    don_vi = ["", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"]
+def docso(n):
+    donvi = ["", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"]
 
     if n < 10:
         if n == 0:
@@ -15,7 +15,7 @@ def doc_so(n):
         elif n == 15:
             return "mười lăm"
         else:
-            return "mười " + don_vi[n % 10]
+            return "mười " + donvi[n % 10]
 
     else:  # từ 20 đến 99
         chuc = n // 10
@@ -30,11 +30,11 @@ def doc_so(n):
         elif dv == 5:
             return chuoi + " lăm"
         else:
-            return chuoi + " " + don_vi[dv]
+            return chuoi + " " + donvi[dv]
 
 # --- Chương trình chính ---
 n = int(input("Nhập số (0-99): "))
 if 0 <= n <= 99:
-    print(f"{n} -> {doc_so(n)}")
+    print(f"{n} -> {docso(n)}")
 else:
     print("Vui lòng nhập số trong khoảng 0 đến 99.")
