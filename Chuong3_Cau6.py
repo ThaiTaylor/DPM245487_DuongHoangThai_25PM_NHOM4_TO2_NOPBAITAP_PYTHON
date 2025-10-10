@@ -1,4 +1,4 @@
-##Câu 6: Nhập một số n có tối đa 2 chữ số. Hãy cho biết cách đọc ra dạng chữ.
+#Câu 6: Nhập một số n có tối đa 2 chữ số. Hãy cho biết cách đọc ra dạng chữ.
 #(vd: n=35 => Ba mươi lăm, n=5 => năm). 
 
 def docso(n):
@@ -7,7 +7,7 @@ def docso(n):
     if n < 10:
         if n == 0:
             return "không"
-        return don_vi[n]
+        return donvi[n]
 
     elif n < 20:
         if n == 10:
@@ -21,7 +21,7 @@ def docso(n):
         chuc = n // 10
         dv = n % 10
 
-        chuoi = don_vi[chuc] + " mươi"
+        chuoi = donvi[chuc] + " mươi"
 
         if dv == 0:
             return chuoi
