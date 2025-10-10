@@ -9,9 +9,9 @@ nam = int(input("Nhập năm: "))
 
 try:
     # Tạo đối tượng ngày
-    ngay_nhap = datetime.date(nam, thang, ngay)
+    ngaynhap = datetime.date(nam, thang, ngay)
     # Cộng thêm 1 ngày
-    ngay_ke = ngay_nhap + datetime.timedelta(days=1)
-    print("Ngày kế tiếp là:", ngay_ke.strftime("%d/%m/%Y"))
+    ngayke = ngaynhap + datetime.timedelta(days=1)
+    print("Ngày kế tiếp là:", ngayke.strftime("%d/%m/%Y"))
 except ValueError:
     print("Ngày không hợp lệ!")
