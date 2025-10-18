@@ -16,7 +16,7 @@ c = float(input("Nhập cạnh c: "))
 if a + b > c and a + c > b and b + c > a:
     print("Ba cạnh tạo thành một tam giác hợp lệ.")
     
-    # Công thức Heron
+    # Công thức Hê-rông
     p = (a + b + c) / 2
     S = math.sqrt(p * (p - a) * (p - b) * (p - c))
     
