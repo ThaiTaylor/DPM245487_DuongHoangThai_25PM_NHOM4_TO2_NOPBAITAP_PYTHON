@@ -30,7 +30,7 @@ while True:
         print(f"{n} không phải là số nguyên tố.")
 
     # Hỏi tiếp tục hay thoát
-    tiep_tuc = input("Bạn có muốn tiếp tục không? (c/k): ").lower()
-    if tiep_tuc != "c":
+    tieptuc = input("Bạn có muốn tiếp tục không? (c/k): ").lower()
+    if tieptuc != "c":
         print("Thoát chương trình. Tạm biệt!")
         break
