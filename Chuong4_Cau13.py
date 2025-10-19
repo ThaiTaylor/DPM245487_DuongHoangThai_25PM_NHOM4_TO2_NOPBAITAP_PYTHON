@@ -23,7 +23,7 @@ def so_hoan_thien(n):
 def so_thinh_vuong(n):
     return tong_uoc(n) > n
 
-# --- Main ---
+
 n = int(input("Nhập số nguyên dương n: "))
 
 if so_hoan_thien(n):
