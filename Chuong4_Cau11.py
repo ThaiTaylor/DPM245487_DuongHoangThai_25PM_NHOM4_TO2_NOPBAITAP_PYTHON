@@ -39,7 +39,6 @@ def main():
     print(sum2())    -> 5 (val giảm xuống 0)
 main()
 
-
 TRƯỜNG HỢP 3:
 def main():
     global val
