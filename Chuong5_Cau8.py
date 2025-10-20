@@ -21,7 +21,7 @@ def LayTenBaiHat(dayduongdan):
     ten_bai_hat = ten_file_day_du.split(".")[0]
     return ten_bai_hat
 
-# --- Chạy thử ---
+# run
 duongdan = input("Nhập đường dẫn file nhạc: ")
 print("Tên file (gồm đuôi):", LayTenFile(duongdan))
 print("Tên bài hát:", LayTenBaiHat(duongdan))
