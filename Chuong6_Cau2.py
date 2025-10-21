@@ -17,21 +17,21 @@ def la_doi_xung(lst):
 def main():
     print("=== CHƯƠNG TRÌNH XỬ LÝ LIST NGẪU NHIÊN ===")
     
-    # 1️⃣ Khởi tạo list ngẫu nhiên n phần tử
+    # Khởi tạo list ngẫu nhiên n phần tử
     n = int(input("Nhập số lượng phần tử n: "))
     lst = [random.randint(0, 9) for _ in range(n)]  # tạo list gồm n số ngẫu nhiên từ 0-9
     print("List ngẫu nhiên:", lst)
 
-    # 2️⃣ Nhập k và xóa tất cả phần tử có giá trị bằng k
+    # Nhập k và xóa tất cả phần tử có giá trị bằng k
     k = int(input("Nhập giá trị k cần xóa: "))
     lst = [x for x in lst if x != k]  # giữ lại các phần tử khác k
     print("List sau khi xóa các phần tử =", k, "là:", lst)
 
-    # 3️⃣ Kiểm tra list có đối xứng hay không
+    # Kiểm tra list có đối xứng hay không
     if la_doi_xung(lst):
-        print("✅ List là đối xứng.")
+        print("List là đối xứng.")
     else:
-        print("❌ List KHÔNG đối xứng.")
+        print("List KHÔNG đối xứng.")
 
-# --- Gọi hàm main ---
+#  Gọi hàm main 
 main()
