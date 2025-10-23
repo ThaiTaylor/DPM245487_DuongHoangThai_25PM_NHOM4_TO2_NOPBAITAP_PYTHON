@@ -3,6 +3,7 @@
 Yêu cầu:
 Cho list
 lst = [20, 1, -34, 40, -8, 60, 1, 3]
+
 Hãy cho biết kết quả:
 (a) lst
 (b) lst[0:3]
