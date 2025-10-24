@@ -13,7 +13,7 @@ for i in range(n):
             lst.append(x)
             break
         else:
-            print("❌ Số phải lớn hơn số trước đó! Nhập lại.")
+            print("Số phải lớn hơn số trước đó! Nhập lại.")
 
-print("✅ Dãy số tăng dần vừa nhập là:")
+print("Dãy số tăng dần vừa nhập là:")
 print(lst)
