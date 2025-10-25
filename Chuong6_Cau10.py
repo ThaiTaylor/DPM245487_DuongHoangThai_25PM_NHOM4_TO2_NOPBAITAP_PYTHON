@@ -6,7 +6,7 @@ Cộng 2 matrix
 Viết hàm tính matrix hoán vị➔áp dụng để tìm cho A, B
 '''
 
-# ====== Hàm nhập ma trận ======
+# Hàm nhập ma trận
 def nhap_matrix(ten):
     m = int(input(f"Nhập số dòng của ma trận {ten}: "))
     n = int(input(f"Nhập số cột của ma trận {ten}: "))
@@ -20,15 +20,15 @@ def nhap_matrix(ten):
         matrix.append(hang)
     return matrix
 
-# ====== Hàm in ma trận ======
+# Hàm in ma trận
 def xuat_matrix(matrix):
     for hang in matrix:
         print(hang)
 
-# ====== Hàm cộng hai ma trận ======
+# Hàm cộng hai ma trận
 def cong_matrix(A, B):
     if len(A) != len(B) or len(A[0]) != len(B[0]):
-        print("⚠️ Hai ma trận không cùng kích thước, không thể cộng!")
+        print("Hai ma trận không cùng kích thước, không thể cộng!")
         return None
     m, n = len(A), len(A[0])
     C = []
@@ -39,7 +39,7 @@ def cong_matrix(A, B):
         C.append(hang)
     return C
 
-# ====== Hàm hoán vị ma trận ======
+# Hàm hoán vị ma trận
 def hoanvi_matrix(A):
     m, n = len(A), len(A[0])
     HT = []
@@ -50,11 +50,11 @@ def hoanvi_matrix(A):
         HT.append(hang)
     return HT
 
-# ====== Chương trình chính ======
-print("=== NHẬP MA TRẬN A ===")
+#  Main 
+print("NHẬP MA TRẬN A")
 A = nhap_matrix("A")
 
-print("=== NHẬP MA TRẬN B ===")
+print("NHẬP MA TRẬN B")
 B = nhap_matrix("B")
 
 print("\nMa trận A:")
