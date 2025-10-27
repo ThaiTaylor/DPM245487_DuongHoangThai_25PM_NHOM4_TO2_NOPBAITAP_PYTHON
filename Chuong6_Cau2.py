@@ -15,7 +15,7 @@ def la_doi_xung(lst):
     return lst == lst[::-1]
 
 def main():
-    print("=== CHƯƠNG TRÌNH XỬ LÝ LIST NGẪU NHIÊN ===")
+    print("CHƯƠNG TRÌNH XỬ LÝ LIST NGẪU NHIÊN")
     
     # Khởi tạo list ngẫu nhiên n phần tử
     n = int(input("Nhập số lượng phần tử n: "))
