@@ -24,7 +24,7 @@ def la_so_nguyen_to(n):
 def main():
     # Khởi tạo list rỗng
     lst = []
-    print("=== CHƯƠNG TRÌNH XỬ LÝ LIST ===")
+    print("CHƯƠNG TRÌNH XỬ LÝ LIST")
 
     # Thêm phần tử vào list
     n = int(input("Nhập số lượng phần tử: "))
