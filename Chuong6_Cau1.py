@@ -10,7 +10,7 @@ Viết chương trình cho phép:
 - Xóa list
 '''
 
-# --- Hàm kiểm tra số nguyên tố ---
+# Hàm kiểm tra số nguyên tố 
 def la_so_nguyen_to(n):
     if n < 2:
         return False
