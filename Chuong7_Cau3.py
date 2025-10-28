@@ -49,7 +49,7 @@ def doc_xml(filename):
     except FileNotFoundError:
         print("⚠️ Không tìm thấy file XML.")
     except Exception as e:
-        print("❌ Lỗi khi đọc file XML:", e)
+        print("Lỗi khi đọc file XML:", e)
 
 
 # Chương trình chính
