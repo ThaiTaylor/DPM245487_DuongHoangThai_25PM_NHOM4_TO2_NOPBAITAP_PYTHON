@@ -20,22 +20,18 @@ Cho 1 file XML có cấu trúc và dữ liệu như dưới đây (employees.xml
 Hãy dùng XML DOM để đọc dữ liệu lên màn hình.
 '''
 
-# ==========================
-# Câu 3: Xử lý XML File
-# ==========================
-
 # Thư viện xml.dom.minidom có sẵn trong Python — không cần cài thêm
 from xml.dom import minidom
 
 def doc_xml(filename):
     try:
-        # 🔹 Parse file XML
+        # Parse file XML
         doc = minidom.parse(filename)
 
-        # 🔹 Lấy danh sách các thẻ <employee>
+        # Lấy danh sách các thẻ <employee>
         employees = doc.getElementsByTagName("employee")
 
-        print("=== DANH SÁCH NHÂN VIÊN ===")
+        print("DANH SÁCH NHÂN VIÊN")
         for emp in employees:
             # Lấy nội dung trong thẻ <id> và <name>
             id_node = emp.getElementsByTagName("id")[0]
@@ -47,7 +43,7 @@ def doc_xml(filename):
             print(f"Mã: {id_value} - Họ tên: {name_value}")
 
     except FileNotFoundError:
-        print("⚠️ Không tìm thấy file XML.")
+        print("Không tìm thấy file XML.")
     except Exception as e:
         print("Lỗi khi đọc file XML:", e)
 
