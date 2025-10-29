@@ -6,19 +6,19 @@ Cho string Json có cấu trúc sau:
 Hãy viết mã lệnh chuyển đổi qua Python Object
 '''
 
-# ==============================
+
 # Câu 4: Xử lý JSON File
-# ==============================
+
 
 import json  # Thư viện chuẩn của Python để xử lý JSON
 
-# 🔹 Chuỗi JSON ban đầu
+# Chuỗi JSON ban đầu
 json_str = '{ "ma":"nv1", "age":50, "ten":"Trần Duy Thanh"}'
 
-# 🔹 Chuyển từ JSON String sang Python Object (dict)
+# Chuyển từ JSON String sang Python Object (dict)
 python_obj = json.loads(json_str)
 
-# 🔹 Xuất kết quả
+# Xuất kết quả
 print("Dạng Python Object:", python_obj)
 print("Kiểu dữ liệu:", type(python_obj))
 print("Mã:", python_obj["ma"])
