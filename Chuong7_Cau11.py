@@ -10,7 +10,7 @@ Viết phần mềm quản lý Nhân viên lưu bằng Excel. Mỗi nhân viên 
 '''
 from openpyxl import Workbook, load_workbook
 
-# ======= HÀM GHI DANH SÁCH NHÂN VIÊN VÀO FILE EXCEL =======
+#  HÀM GHI DANH SÁCH NHÂN VIÊN VÀO FILE EXCEL 
 def ghi_nhan_vien(file_path, danh_sach_nv):
     wb = Workbook()
     ws = wb.active
@@ -24,10 +24,10 @@ def ghi_nhan_vien(file_path, danh_sach_nv):
         ws.append([i, nv["ma"], nv["ten"], nv["tuoi"]])
 
     wb.save(file_path)
-    print(f"✅ Đã lưu {len(danh_sach_nv)} nhân viên vào file '{file_path}'.")
+    print(f"Đã lưu {len(danh_sach_nv)} nhân viên vào file '{file_path}'.")
 
 
-# ======= HÀM ĐỌC DANH SÁCH NHÂN VIÊN TỪ FILE EXCEL =======
+#  HÀM ĐỌC DANH SÁCH NHÂN VIÊN TỪ FILE EXCEL 
 def doc_nhan_vien(file_path):
     wb = load_workbook(file_path)
     ws = wb.active
@@ -40,15 +40,15 @@ def doc_nhan_vien(file_path):
     return danh_sach_nv
 
 
-# ======= HÀM SẮP XẾP NHÂN VIÊN THEO TUỔI TĂNG DẦN =======
+#  HÀM SẮP XẾP NHÂN VIÊN THEO TUỔI TĂNG DẦN
 def sap_xep_theo_tuoi(danh_sach_nv):
     return sorted(danh_sach_nv, key=lambda x: x["tuoi"])
 
 
-# ======= CHƯƠNG TRÌNH CHÍNH =======
+# CHƯƠNG TRÌNH CHÍNH 
 file_excel = "NhanVien.xlsx"
 
-# 1️⃣ Nhập danh sách nhân viên mẫu
+# Nhập danh sách nhân viên mẫu
 danh_sach_nv = [
     {"ma": "NV1", "ten": "An", "tuoi": 18},
     {"ma": "NV2", "ten": "Lành", "tuoi": 22},
@@ -58,17 +58,17 @@ danh_sach_nv = [
     {"ma": "NV6", "ten": "Phúc", "tuoi": 24},
 ]
 
-# 2️⃣ Ghi danh sách vào file Excel
+# Ghi danh sách vào file Excel
 ghi_nhan_vien(file_excel, danh_sach_nv)
 
-# 3️⃣ Đọc lại danh sách từ file Excel
+# Đọc lại danh sách từ file Excel
 ds_doc = doc_nhan_vien(file_excel)
-print("\n📋 Danh sách nhân viên đọc từ file:")
+print("\n Danh sách nhân viên đọc từ file:")
 for nv in ds_doc:
     print(nv)
 
-# 4️⃣ Sắp xếp danh sách theo tuổi tăng dần
+# Sắp xếp danh sách theo tuổi tăng dần
 ds_sap_xep = sap_xep_theo_tuoi(ds_doc)
-print("\n📈 Danh sách nhân viên sau khi sắp xếp theo tuổi tăng dần:")
+print("\nDanh sách nhân viên sau khi sắp xếp theo tuổi tăng dần:")
 for nv in ds_sap_xep:
     print(nv)
