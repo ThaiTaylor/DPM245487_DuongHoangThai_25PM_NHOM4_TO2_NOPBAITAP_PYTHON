@@ -40,5 +40,5 @@ ten_file = "dulieu.csv"
 tao_file_csv(ten_file)
 
 # Đọc file CSV và in tổng từng dòng
-print("\n📊 Kết quả tính tổng từng dòng:")
+print("\nKết quả tính tổng từng dòng:")
 doc_va_tinh_tong(ten_file)
